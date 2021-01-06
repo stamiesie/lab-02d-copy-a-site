@@ -1,41 +1,70 @@
-.grid {
+body {
+    background-color: black;
     
-    border: 2px solid red;
+}
+
+.grid {
+    justify-content: center;
     height: 541px;
     width: 864px;
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
-    border-radius: 5px;
+    
 }
 
 .area {
-    border: 2px solid black;
+    
     border-radius: 10px;
 }
 
 .a {
     grid-column: 1 / span 5;
+    font-family: 'Roboto', sans-serif;
 }
 
 .b {
     grid-column: 6 / span 2;
 }
 .c {
-grid-column: 1 / span 3;
-grid-row: 2 / span 3;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .d {
     grid-column: 4 / span 2;
     grid-row: 2 / span 2;
+    overflow: hidden;
+    
 }
 
 .e {
     grid-column: 6 / span 2;
-    grid-row: 2 / span 2; 
+    grid-row: 2 / span 2;
+    overflow: hidden;
 }
 
 .f {
     grid-column: 4 / span 4;
+    overflow: hidden;
 }
+
+.text {
+    color: rgb(219, 218, 215);
+}
+
+.button {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 5px;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
